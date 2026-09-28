@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Footer - Compra de créditos</title>
+
+  <!-- DaisyUI -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@5"
+    rel="stylesheet"
+    type="text/css"
+  >
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+  <!-- FOOTER DA PÁGINA DE COMPRA -->
+  <footer
+    class="flex h-[76px] w-full items-center justify-between
+           border-t border-[#dedede] bg-white px-[28px]"
+  >
+
+    <!-- VOLTAR -->
+    <a
+      href="dashboard.html"
+      class="text-[12px] font-semibold text-[#0758a6]
+             hover:underline"
+    >
+      Voltar
+    </a>
+
+    <!-- BOTÕES -->
+    <div class="flex items-center gap-[8px]">
+
+      <!-- ADICIONAR AO CARRINHO -->
+      <button
+        type="button"
+        class="btn h-[38px] min-h-[38px] rounded-[4px]
+               border-[#0758a6] bg-white px-[20px]
+               text-[12px] font-semibold text-[#0758a6]
+               shadow-none hover:bg-[#f5f9fd]"
+      >
+        Adicionar ao carrinho
+      </button>
+
+      <!-- CONTINUAR -->
+      <button
+        type="button"
+        class="btn h-[38px] min-h-[38px] rounded-[4px]
+               border-[#0758a6] bg-[#0758a6] px-[25px]
+               text-[12px] font-semibold text-white
+               shadow-none hover:bg-[#064b8d]"
+      >
+        Continuar
+
+        <svg
+          class="ml-1 h-[18px] w-[18px]"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M5 12h14"></path>
+          <path d="m14 7 5 5-5 5"></path>
+        </svg>
+
+      </button>
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
