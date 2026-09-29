@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Módulo 3</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 h-screen flex flex-col overflow-hidden">
+
+  <!-- Header -->
+  <header class="flex-none">
+    <div class="navbar bg-base-300 shadow-sm px-2 sm:px-4 gap-2">
+      <div class="flex-1 min-w-0">
+        <a class="btn btn-ghost p-1 h-auto min-h-0 max-w-full justify-start">
+          <img src="img/Vector (2).png" alt="AgênciaWeb" class="h-7 sm:h-8 w-auto object-contain max-w-full" />
+        </a>
+      </div>
+
+      <div class="flex-none">
+        <button class="btn btn-ghost p-1 h-auto min-h-0 shrink-0">
+          <img src="img/user.png" alt="User" class="h-7 sm:h-8 w-auto object-contain" />
+        </button>
+      </div>
+    </div>
+  </header>
+
+  
+  <div class="flex flex-1 h-full overflow-hidden">
+    <!--ASIDE-->
+    <aside class="w-64 bg-base-200 h-full flex-none overflow-y-auto">
+      <ul class="menu bg-base-200 w-full p-4">
+        <li class="menu-title">Canal do cliente</li>
+        <li>
+          <details open>
+            <summary>Loja de projetos</summary>
+            <ul>
+              <li><a>Dashboard</a></li>
+              <li><a>Compra de créditos</a></li>
+              <li><a>Concluídos</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a>Gestão de projetos</a></li>
+        <li><a>Campanhas</a></li>
+      </ul>
+    </aside>
+  </div>
+
+</body>
+</html>
