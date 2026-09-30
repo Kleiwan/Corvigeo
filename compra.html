@@ -4,13 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projeto Módulo 3 - Compra de Créditos</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body class="bg-white h-screen flex flex-col overflow-hidden font-['Sora']">
-
   <header class="flex-none">
     <div class="navbar bg-base-300 shadow-sm px-2 sm:px-4 gap-2">
       <div class="flex-1 min-w-0">
@@ -26,7 +25,6 @@
       </div>
     </div>
   </header>
-
   <div class="flex flex-1 h-full overflow-hidden">
 
     <aside class="w-80 bg-white h-full flex-none overflow-y-auto shadow-sm p-8 border-r border-gray-100">
@@ -179,9 +177,27 @@
             </div>
           </div>
         </div>
+
+        <div class="w-full max-w-4xl pt-4">
+          <div class="collapse collapse-arrow border-t border-gray-200 rounded-none">
+            <input type="checkbox" /> 
+            <div class="collapse-title text-lg font-bold px-0 after:text-[#104F98]">
+              Mais informações sobre o produto
+            </div>
+            <div class="collapse-content px-0 pt-4 border-t border-gray-100">
+              <p class="text-sm">
+                <strong class="text-[#4D4D4D]">ATENÇÃO:</strong> 
+                <span class="text-[#8D9297]">
+                  A transferência dos pontos comprados para programas parceiros (Milhas) depende da elegibilidade do seu cartão de crédito. Consulte os cartões elegíveis na página do produto a partir do menu Viagens - Programas Parceiros.
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+
       <footer class="flex h-[76px] w-full items-center justify-between border-t border-[#dedede] bg-white px-[28px] mt-8 shrink-0">
-        <a href="dashboard.html" class="text-[12px] font-semibold text-[#0758a6] hover:underline">
+        <a href="index.html" class="text-[12px] font-semibold text-[#0758a6] hover:underline">
           Voltar
         </a>
         <div class="flex items-center gap-[8px]">
@@ -206,7 +222,6 @@
     const totalElemento = document.getElementById("total");
     const btnMais = document.getElementById("btnMais");
     const btnMenos = document.getElementById("btnMenos");
-
     function atualizar() {
       creditosElemento.textContent = creditos;
       const total = creditos * valorPorCredito;
@@ -215,12 +230,10 @@
         currency: "BRL"
       });
     }
-
     btnMais.addEventListener("click", function () {
       creditos += 50;
       atualizar();
     });
-
     btnMenos.addEventListener("click", function () {
       if (creditos > 50) {
         creditos -= 50;
