@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalho em Grupo 3</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { sans: ['Open Sans', 'sans-serif'], heading: ['Sora', 'sans-serif'] } } } }
+  </script>
+</head>
+
+<body class="bg-base-200 font-sans ">
+  <main class="max-w-5xl mx-auto min-h-screen bg-base-100 px-6 py-8 flex flex-col gap-14">
+
+    <!-- CRONOGRAMA GERAL -->
+    <section class="flex flex-col gap-3 mx-8">
+      <div class="flex items-center justify-between">
+        <h2 class="font-heading text-xl font-bold uppercase mb-8">Cronograma Geral</h2>
+        <div class="flex gap-1.5">
+          <button class="btn btn-circle btn-xs btn-outline border-base-300" aria-label="Semana anterior">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+          </button>
+          <button class="btn btn-circle btn-xs btn-outline border-base-300" aria-label="Próxima semana">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="overflow-x-auto rounded-lg border border-base-300">
+        <table class="table table-fixed w-full min-w-[640px] border-collapse">
+          <thead>
+            <tr class="bg-base-200/70 text-center border-b border-base-300">
+            <th class="border-r border-base-300 last:border-r-0 font-normal py-4">
+              <div class="flex flex-col items-center gap-1.5">
+                <span class="text-xs font-medium text-base-content/80">Seg</span>
+                <span class="w-7 h-7 rounded-full bg-neutral text-neutral-content text-xs font-bold flex items-center justify-center">3</span>
+              </div>
+            </th>
+            <th class="border-r border-base-300 last:border-r-0 font-normal py-4">
+              <div class="flex flex-col items-center gap-1.5">
+                <span class="text-xs font-medium text-base-content/80">Ter</span>
+                <span class="w-7 h-7 rounded-full bg-neutral text-neutral-content text-xs font-bold flex items-center justify-center">4</span>
+              </div>
+            </th>
+            <th class="border-r border-base-300 last:border-r-0 font-normal py-4">
+              <div class="flex flex-col items-center gap-1.5">
+                <span class="text-xs font-medium text-base-content/80">Qua</span>
+                <span class="w-7 h-7 rounded-full bg-neutral text-neutral-content text-xs font-bold flex items-center justify-center">5</span>
+              </div>
+            </th>
+            <th class="border-r border-base-300 last:border-r-0 font-normal py-4">
+              <div class="flex flex-col items-center gap-1.5">
+                <span class="text-xs font-medium text-base-content/80">Qui</span>
+                <span class="w-7 h-7 rounded-full bg-neutral text-neutral-content text-xs font-bold flex items-center justify-center">6</span>
+              </div>
+            </th>
+            <th class="border-r border-base-300 last:border-r-0 font-normal py-4">
+              <div class="flex flex-col items-center gap-1.5">
+                <span class="text-xs font-medium text-base-content/80">Sex</span>
+                <span class="w-7 h-7 rounded-full bg-neutral text-neutral-content text-xs font-bold flex items-center justify-center">7</span>
+              </div>
+            </th>
+            <th class="border-r border-base-300 last:border-r-0 font-normal py-4">
+              <div class="flex flex-col items-center gap-1.5">
+                <span class="text-xs font-medium text-base-content/80">Sáb</span>
+                <span class="w-7 h-7 rounded-full bg-neutral text-neutral-content text-xs font-bold flex items-center justify-center">8</span>
+              </div>
+            </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+          <td class="align-top p-2 border-r border-base-300 last:border-r-0">
+            <div class="flex flex-col gap-2">
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">08:00 - 11:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/volei.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Vôlei de Quadra</span>
+                </div>
+              </div>
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">11:20 - 13:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/nata.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Natação</span>
+                </div>
+              </div>
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">14:30 - 17:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/fut.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Futebol Society</span>
+                </div>
+              </div>
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">16:00 - 18:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/jud.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Judô</span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="align-top p-2 border-r border-base-300 last:border-r-0">
+            <div class="flex flex-col gap-2">
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">08:00 - 11:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/basquete.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Basquete 3x3</span>
+                </div>
+              </div>
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">10:00 - 13:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/fut.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Futebol 11</span>
+                </div>
+              </div>
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">14:30 - 16:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/fut.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Futebol 7</span>
+                </div>
+              </div>
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">16:20 - 18:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/fut.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Futebol Society</span>
+                </div>
+              </div>
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">14:30 - 18:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/jud.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Jiu-jitsu</span>
+                </div>
+              </div>
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">16:00 - 18:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/jud.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Judô</span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="align-top p-2 border-r border-base-300 last:border-r-0">
+            <div class="flex flex-col gap-2">
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">08:00 - 11:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/volei.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Vôlei de Quadra</span>
+                </div>
+              </div>
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">08:00 - 11:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/basquete.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Basquete 3x3</span>
+                </div>
+              </div>
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">10:00 - 13:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/nata.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Natação</span>
+                </div>
+              </div>
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">14:30 - 18:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/jud.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Jiu-jitsu</span>
+                </div>
+              </div>
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">15:00 - 18:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/corrida.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Corrida 5km</span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="align-top p-2 border-r border-base-300 last:border-r-0">
+            <div class="flex flex-col gap-2">
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">08:00 - 11:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/volei.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Vôlei de Quadra</span>
+                </div>
+              </div>
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">11:20 - 13:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/nata.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Natação</span>
+                </div>
+              </div>
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">14:30 - 17:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/fut.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Futebol Society</span>
+                </div>
+              </div>
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">16:00 - 18:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/jud.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Judô</span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="align-top p-2 border-r border-base-300 last:border-r-0">
+            <div class="flex flex-col gap-2">
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">08:00 - 11:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/basquete.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Basquete 3x3</span>
+                </div>
+              </div>
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">10:00 - 13:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/fut.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Futebol 11</span>
+                </div>
+              </div>
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">14:30 - 16:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/fut.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Futebol 7</span>
+                </div>
+              </div>
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">16:20 - 18:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/fut.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Futebol Society</span>
+                </div>
+              </div>
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">14:30 - 18:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/jud.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Jiu-jitsu</span>
+                </div>
+              </div>
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">16:00 - 18:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/jud.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Judô</span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="align-top p-2 border-r border-base-300 last:border-r-0">
+            <div class="flex flex-col gap-2">
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">08:00 - 11:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/volei.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Vôlei de Quadra</span>
+                </div>
+              </div>
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">08:00 - 11:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/basquete.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Basquete 3x3</span>
+                </div>
+              </div>
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">10:00 - 13:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/nata.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Natação</span>
+                </div>
+              </div>
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">14:30 - 18:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/jud.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Jiu-jitsu</span>
+                </div>
+              </div>
+              <div class="rounded-md border border-base-300  p-2.5 flex flex-col gap-1.5">
+                <span class="text-xs text-base-content/70">15:00 - 18:00</span>
+                <div class="flex items-center gap-1.5">
+                  <img src="img/corrida.png" alt="" class="w-4 h-4 rounded-full object-contain">
+                  <span class="text-xs font-semibold leading-tight">Corrida 5km</span>
+                </div>
+              </div>
+            </div>
+          </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- CRONOGRAMA POR MODALIDADES -->
+    <section class="flex flex-col gap-1 mx-8">
+      <h2 class="font-heading text-xl font-bold uppercase mb-8">Cronograma por Modalidades</h2>
+
+      <!-- Item 1: Basquete 3x3 -->
+      <details name="modalidades" class="collapse collapse-arrow rounded-none border-b border-base-200 ">
+        <summary class="collapse-title font-semibold text-gray-800 hover:text-blue-600 focus:text-blue-600 transition-colors">
+          <div class="flex items-center gap-2">
+            <img src="img/basquete.png" alt="Basquete" class="w-5 h-5 ">
+            <span>Basquete 3x3</span>
+        </summary>
+
+        <div class="collapse-content px-0">
+          <div class="overflow-x-auto rounded-lg border border-base-300">
+            <table class="table w-full">
+              <tbody class="divide-y divide-base-300">
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">09h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 1</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 2</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">11h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 2</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 2 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">14h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 3</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">10h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 4</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Final</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">15h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 5</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">2º melhor colocado x 3º melhor colocado</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+
+      <!-- Item 2: Beach Tennis -->
+      <details name="modalidades" class="collapse collapse-arrow rounded-none border-b border-base-200 ">
+        <summary class="collapse-title font-semibold text-gray-800 hover:text-blue-600 focus:text-blue-600 transition-colors">
+          <div class="flex items-center gap-2">
+            <img src="img/beach.png" alt="" class="w-5 h-5 ">
+            <span>Beach Tennis</span>
+          </div>
+        </summary>
+        <div class="collapse-content px-0">
+          <div class="overflow-x-auto rounded-lg border border-base-300">
+            <table class="table w-full">
+              <tbody class="divide-y divide-base-300">
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">09h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 1</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 2</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">11h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 2</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 2 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">14h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 3</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">10h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 4</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Final</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">15h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 5</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">2º melhor colocado x 3º melhor colocado</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+
+      <!-- Item 3: Corrida de Rua -->
+      <details name="modalidades" class="collapse collapse-arrow rounded-none border-b border-base-200 ">
+        <summary class="collapse-title font-semibold text-gray-800 hover:text-blue-600 focus:text-blue-600 transition-colors">
+          <div class="flex items-center gap-2">
+            <img src="img/corrida.png" alt="" class="w-5 h-5 ">
+            <span>Corrida de Rua</span>
+          </div>
+        </summary>
+        <div class="collapse-content px-0">
+          <div class="overflow-x-auto rounded-lg border border-base-300">
+            <table class="table w-full">
+              <tbody class="divide-y divide-base-300">
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">09h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 1</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 2</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">11h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 2</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 2 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">14h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 3</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">10h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 4</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Final</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">15h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 5</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">2º melhor colocado x 3º melhor colocado</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+
+      <!-- Item 4: Crossfit -->
+      <details name="modalidades" class="collapse collapse-arrow rounded-none border-b border-base-200 ">
+        <summary class="collapse-title font-semibold text-gray-800 hover:text-blue-600 focus:text-blue-600 transition-colors">
+          <div class="flex items-center gap-2">
+            <img src="img/cross.png" alt="" class="w-5 h-5 ">
+            <span>Crossfit</span>
+          </div>
+        </summary>
+        <div class="collapse-content px-0">
+          <div class="overflow-x-auto rounded-lg border border-base-300">
+            <table class="table w-full">
+              <tbody class="divide-y divide-base-300">
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">09h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 1</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 2</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">11h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 2</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 2 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">14h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 3</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">10h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 4</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Final</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">15h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 5</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">2º melhor colocado x 3º melhor colocado</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+
+      <!-- Item 5: Futebol 11 -->
+      <details name="modalidades" class="collapse collapse-arrow rounded-none border-b border-base-200 " open>
+        <summary class="collapse-title font-semibold text-gray-800 hover:text-blue-600 focus:text-blue-600 transition-colors">
+          <div class="flex items-center gap-2">
+            <img src="img/fut.png" alt="" class="w-5 h-5 ">
+            <span>Futebol 11</span>
+          </div>
+        </summary>
+        <div class="collapse-content px-0">
+          <div class="overflow-x-auto rounded-lg border border-base-300">
+            <table class="table w-full">
+              <tbody class="divide-y divide-base-300">
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">09h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 1</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 2</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">11h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 2</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 2 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">14h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 3</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">10h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 4</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Final</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">15h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 5</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">2º melhor colocado x 3º melhor colocado</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+
+      <!-- Item 6: Futebol 7 -->
+      <details name="modalidades" class="collapse collapse-arrow rounded-none border-b border-base-200 ">
+        <summary class="collapse-title font-semibold text-gray-800 hover:text-blue-600 focus:text-blue-600 transition-colors">
+          <div class="flex items-center gap-2">
+            <img src="img/fut.png" alt="" class="w-5 h-5 ">
+            <span>Futebol 7</span>
+          </div>
+        </summary>
+        <div class="collapse-content px-0">
+          <div class="overflow-x-auto rounded-lg border border-base-300">
+            <table class="table w-full">
+              <tbody class="divide-y divide-base-300">
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">09h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 1</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 2</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">11h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 2</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 2 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">14h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 3</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">10h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 4</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Final</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">15h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 5</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">2º melhor colocado x 3º melhor colocado</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+
+      <!-- Item 7: Futebol Society -->
+      <details name="modalidades" class="collapse collapse-arrow rounded-none border-b border-base-200 ">
+        <summary class="collapse-title font-semibold text-gray-800 hover:text-blue-600 focus:text-blue-600 transition-colors">
+          <div class="flex items-center gap-2">
+            <img src="img/fut.png" alt="" class="w-5 h-5 ">
+            <span>Futebol Society</span>
+          </div>
+        </summary>
+        <div class="collapse-content px-0">
+          <div class="overflow-x-auto rounded-lg border border-base-300">
+            <table class="table w-full">
+              <tbody class="divide-y divide-base-300">
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">09h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 1</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 2</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">11h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 2</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 2 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">14h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 3</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">10h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 4</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Final</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">15h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 5</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">2º melhor colocado x 3º melhor colocado</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+
+      <!-- Item 8: Futebol de Mesa -->
+      <details name="modalidades" class="collapse collapse-arrow rounded-none border-b border-base-200 ">
+        <summary class="collapse-title font-semibold text-gray-800 hover:text-blue-600 focus:text-blue-600 transition-colors">
+          <div class="flex items-center gap-2">
+            <img src="img/fut.png" alt="" class="w-5 h-5 ">
+            <span>Futebol de Mesa</span>
+          </div>
+        </summary>
+        <div class="collapse-content px-0">
+          <div class="overflow-x-auto rounded-lg border border-base-300">
+            <table class="table w-full">
+              <tbody class="divide-y divide-base-300">
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">09h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 1</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 2</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">11h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 2</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 2 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">14h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 3</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">10h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 4</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Final</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">15h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 5</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">2º melhor colocado x 3º melhor colocado</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+
+      <!-- Item 9: Futevôlei -->
+      <details name="modalidades" class="collapse collapse-arrow rounded-none border-b border-base-200 ">
+        <summary class="collapse-title font-semibold text-gray-800 hover:text-blue-600 focus:text-blue-600 transition-colors">
+          <div class="flex items-center gap-2">
+            <img src="img/volei.png" alt="" class="w-5 h-5 ">
+            <span>Futevôlei</span>
+          </div>
+        </summary>
+        <div class="collapse-content px-0">
+          <div class="overflow-x-auto rounded-lg border border-base-300">
+            <table class="table w-full">
+              <tbody class="divide-y divide-base-300">
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">09h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 1</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 2</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">11h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 2</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 2 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">14h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 3</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">10h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 4</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Final</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">15h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 5</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">2º melhor colocado x 3º melhor colocado</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+
+      <!-- Item 10: Jiu-Jitsu -->
+      <details name="modalidades" class="collapse collapse-arrow rounded-none border-b border-base-200 ">
+        <summary class="collapse-title font-semibold text-gray-800 hover:text-blue-600 focus:text-blue-600 transition-colors">
+          <div class="flex items-center gap-2">
+            <img src="img/jud.png" alt="" class="w-5 h-5 ">
+            <span>Jiu-Jitsu</span>
+          </div>
+        </summary>
+        <div class="collapse-content px-0">
+          <div class="overflow-x-auto rounded-lg border border-base-300">
+            <table class="table w-full">
+              <tbody class="divide-y divide-base-300">
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">09h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 1</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 2</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">11h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 2</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 2 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">14h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 3</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">10h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 4</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Final</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">15h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 5</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">2º melhor colocado x 3º melhor colocado</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+
+      <!-- Item 11: Judô -->
+      <details name="modalidades" class="collapse collapse-arrow rounded-none border-b border-base-200 ">
+        <summary class="collapse-title font-semibold text-gray-800 hover:text-blue-600 focus:text-blue-600 transition-colors">
+          <div class="flex items-center gap-2">
+            <img src="img/jud.png" alt="" class="w-5 h-5 ">
+            <span>Judô</span>
+          </div>
+        </summary>
+        <div class="collapse-content px-0">
+          <div class="overflow-x-auto rounded-lg border border-base-300">
+            <table class="table w-full">
+              <tbody class="divide-y divide-base-300">
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">09h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 1</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 2</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">11h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 2</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 2 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">14h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 3</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">10h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 4</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Final</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">15h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 5</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">2º melhor colocado x 3º melhor colocado</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+
+      <!-- Item 12: Natação -->
+      <details name="modalidades" class="collapse collapse-arrow rounded-none border-b border-base-200 ">
+        <summary class="collapse-title font-semibold text-gray-800 hover:text-blue-600 focus:text-blue-600 transition-colors">
+          <div class="flex items-center gap-2">
+            <img src="img/nata.png" alt="" class="w-5 h-5 ">
+            <span>Natação</span>
+          </div>
+        </summary>
+        <div class="collapse-content px-0">
+          <div class="overflow-x-auto rounded-lg border border-base-300">
+            <table class="table w-full">
+              <tbody class="divide-y divide-base-300">
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">09h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 1</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 2</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">11h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 2</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 2 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">14h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 3</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">10h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 4</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Final</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">15h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 5</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">2º melhor colocado x 3º melhor colocado</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+
+      <!-- Item 13: Sinuca -->
+      <details name="modalidades" class="collapse collapse-arrow rounded-none border-b border-base-200 ">
+        <summary class="collapse-title font-semibold text-gray-800 hover:text-blue-600 focus:text-blue-600 transition-colors">
+          <div class="flex items-center gap-2">
+            <img src="img/sinu.png" alt="" class="w-5 h-5 ">
+            <span>Sinuca</span>
+          </div>
+        </summary>
+        <div class="collapse-content px-0">
+          <div class="overflow-x-auto rounded-lg border border-base-300">
+            <table class="table w-full">
+              <tbody class="divide-y divide-base-300">
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">09h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 1</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 2</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">11h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 2</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 2 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">14h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 3</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">10h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 4</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Final</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">15h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 5</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">2º melhor colocado x 3º melhor colocado</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+
+      <!-- Item 14: Tênis -->
+      <details name="modalidades" class="collapse collapse-arrow rounded-none border-b border-base-200 ">
+        <summary class="collapse-title font-semibold text-gray-800 hover:text-blue-600 focus:text-blue-600 transition-colors">
+          <div class="flex items-center gap-2">
+            <img src="img/beach.png" alt="" class="w-5 h-5 ">
+            <span>Tênis</span>
+          </div>
+        </summary>
+        <div class="collapse-content px-0">
+          <div class="overflow-x-auto rounded-lg border border-base-300">
+            <table class="table w-full">
+              <tbody class="divide-y divide-base-300">
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">09h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 1</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 2</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">11h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 2</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 2 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">14h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 3</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">10h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 4</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Final</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">15h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 5</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">2º melhor colocado x 3º melhor colocado</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+
+      <!-- Item 15: Tênis de Mesa -->
+      <details name="modalidades" class="collapse collapse-arrow rounded-none border-b border-base-200 ">
+        <summary class="collapse-title font-semibold text-gray-800 hover:text-blue-600 focus:text-blue-600 transition-colors">
+          <div class="flex items-center gap-2">
+            <img src="img/beach.png" alt="" class="w-5 h-5 ">
+            <span>Tênis de Mesa</span>
+          </div>
+        </summary>
+        <div class="collapse-content px-0">
+          <div class="overflow-x-auto rounded-lg border border-base-300">
+            <table class="table w-full">
+              <tbody class="divide-y divide-base-300">
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">09h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 1</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 2</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">11h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 2</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 2 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">14h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 3</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">10h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 4</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Final</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">15h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 5</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">2º melhor colocado x 3º melhor colocado</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+
+      <!-- Item 16: Tiro Esportivo -->
+      <details name="modalidades" class="collapse collapse-arrow rounded-none border-b border-base-200 ">
+        <summary class="collapse-title font-semibold text-gray-800 hover:text-blue-600 focus:text-blue-600 transition-colors">
+          <div class="flex items-center gap-2">
+            <img src="img/tiro.png" alt="" class="w-5 h-5 ">
+            <span>Tiro Esportivo</span>
+          </div>
+        </summary>
+        <div class="collapse-content px-0">
+          <div class="overflow-x-auto rounded-lg border border-base-300">
+            <table class="table w-full">
+              <tbody class="divide-y divide-base-300">
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">09h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 1</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 2</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">11h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 2</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 2 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">14h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 3</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">10h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 4</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Final</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">15h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 5</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">2º melhor colocado x 3º melhor colocado</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+
+      <!-- Item 17: Vôlei de Praia -->
+      <details name="modalidades" class="collapse collapse-arrow rounded-none border-b border-base-200 ">
+        <summary class="collapse-title font-semibold text-gray-800 hover:text-blue-600 focus:text-blue-600 transition-colors">
+          <div class="flex items-center gap-2">
+            <img src="img/volei.png" alt="" class="w-5 h-5 ">
+            <span>Vôlei de Praia</span>
+          </div>
+        </summary>
+        <div class="collapse-content px-0">
+          <div class="overflow-x-auto rounded-lg border border-base-300">
+            <table class="table w-full">
+              <tbody class="divide-y divide-base-300">
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">09h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 1</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 2</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">11h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 2</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 2 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">14h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 3</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">10h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 4</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Final</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">15h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 5</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">2º melhor colocado x 3º melhor colocado</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+
+      <!-- Item 18: Vôlei de Quadra -->
+      <details name="modalidades" class="collapse collapse-arrow rounded-none border-b border-base-200 ">
+        <summary class="collapse-title font-semibold text-gray-800 hover:text-blue-600 focus:text-blue-600 transition-colors">
+          <div class="flex items-center gap-2">
+            <img src="img/volei.png" alt="" class="w-5 h-5 ">
+            <span>Vôlei de Quadra</span>
+          </div>
+        </summary>
+        <div class="collapse-content px-0">
+          <div class="overflow-x-auto rounded-lg border border-base-300">
+            <table class="table w-full">
+              <tbody class="divide-y divide-base-300">
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">09h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 1</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 2</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">11h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 2</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 2 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">14h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 3</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">10h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 4</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Final</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">15h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 5</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">2º melhor colocado x 3º melhor colocado</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+
+      <!-- Item 19: Xadrez -->
+      <details name="modalidades" class="collapse collapse-arrow rounded-none border-b border-base-200 ">
+        <summary class="collapse-title font-semibold text-gray-800 hover:text-blue-600 focus:text-blue-600 transition-colors">
+          <div class="flex items-center gap-2">
+            <img src="img/xadrez.png" alt="" class="w-5 h-5 ">
+            <span>Xadrez</span>
+          </div>
+        </summary>
+        <div class="collapse-content px-0">
+          <div class="overflow-x-auto rounded-lg border border-base-300">
+            <table class="table w-full">
+              <tbody class="divide-y divide-base-300">
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">09h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 1</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 2</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">11h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 2</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 2 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">03/07/2023</td>
+                <td class="px-4 py-3 font-semibold">14h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 3</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Equipe 1 x Equipe 3</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">10h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 4</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">Final</td>
+              </tr>
+              <tr class="divide-x divide-base-300 border-base-300 text-xs whitespace-nowrap">
+                <td class="px-4 py-3 font-semibold">04/07/2023</td>
+                <td class="px-4 py-3 font-semibold">15h00</td>
+                <td class="px-4 py-3 text-base-content/70">Lorem Ipsum is simply dummy text</td>
+                <td class="px-4 py-3 text-base-content/70">Jogo 5</td>
+                <td class="px-4 py-3 text-base-content/70">Grupo A</td>
+                <td class="px-4 py-3 font-bold">2º melhor colocado x 3º melhor colocado</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+
+    </section>
+
+  </main>
+</body>
+</html>
