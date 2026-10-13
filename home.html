@@ -14,7 +14,8 @@
     <header>
         <div class="navbar bg-base-100 shadow-sm px-22">
             <div class="flex-1">
-                <a class="btn btn-ghost text-xl" href="home.html"><img src="assets/img/Olimpiadas Concad Logo Horizontal (1) 2.svg" alt=""></a>
+                <a class="btn btn-ghost text-xl" href="home.html"><img
+                        src="assets/img/Olimpiadas Concad Logo Horizontal (1) 2.svg" alt=""></a>
             </div>
             <div class="flex-none">
                 <ul class=" flex gap-8 px-1 text-xs">
@@ -28,6 +29,210 @@
             </div>
         </div>
     </header>
+    <section class="py-16 bg-base-300">
+        <h1 class="text-center text-3xl font-bold text-neutral mb-12">
+            Depoimentos
+        </h1>
+
+        <div class="relative ml-auto w-[80%] pl-0">
+
+            <div id="slider-viewport" class="overflow-hidden">
+                <div id="slider-track" class="flex gap-8 transition-transform duration-500 ease-in-out">
+
+                    <article
+                        class="testimonial-card bg-gradient-to-tr from-[#1d75bc] via-[#664b8e] to-[#e61a27] p-8 text-white shadow-lg">
+                        <p class="text-sm">
+                            Lorem ipsum has been the industry's standard dummy text
+                            ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.
+                        </p>
+
+                        <div class="flex items-center gap-4 mt-6">
+                            <img src="assets/img/Ellipse 1.png" alt="Foto de Jefferson"
+                                class="w-12 h-12 rounded-full object-cover">
+
+                            <div>
+                                <h2 class="font-bold">Jefferson Thawan</h2>
+                                <p class="text-xs mt-1">Função/Cargo</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <p class="text-sm">
+                            Lorem ipsum has been the industry's standard dummy text
+                            ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.
+                        </p>
+
+                        <div class="flex items-center gap-4 mt-6">
+                            <img src="assets/img/Ellipse 1 (1).png" alt="Foto de Cesimar"
+                                class="w-12 h-12 rounded-full object-cover">
+
+                            <div>
+                                <h2 class="font-bold">Cesimar Xavier</h2>
+                                <p class="text-xs mt-1">Função/Cargo</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <p class="text-sm">
+                            Lorem ipsum has been the industry's standard dummy text
+                            ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.
+                        </p>
+
+                        <div class="flex items-center gap-4 mt-6">
+                            <img src="assets/img/Ellipse 1 (2).png" alt="Foto de Zadoque"
+                                class="w-12 h-12 rounded-full object-cover">
+
+                            <div>
+                                <h2 class="font-bold">Zadoque</h2>
+                                <p class="text-xs mt-1">Função/Cargo</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <p class="text-sm">
+                            Lorem ipsum has been the industry's standard dummy text
+                            ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.
+                        </p>
+
+                        <div class="flex items-center gap-4 mt-6">
+                            <img src="https://i.pravatar.cc/100?img=14" alt="Foto de Mariana"
+                                class="w-12 h-12 rounded-full object-cover">
+
+                            <div>
+                                <h2 class="font-bold">Mariana Silva</h2>
+                                <p class="text-xs mt-1">Função/Cargo</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <p class="text-sm">
+                            Lorem ipsum has been the industry's standard dummy text
+                            ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.
+                        </p>
+
+                        <div class="flex items-center gap-4 mt-6">
+                            <img src="https://i.pravatar.cc/100?img=14" alt="Foto de Mariana"
+                                class="w-12 h-12 rounded-full object-cover">
+
+                            <div>
+                                <h2 class="font-bold">Mariana Silva</h2>
+                                <p class="text-xs mt-1">Função/Cargo</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <p class="text-sm">
+                            Lorem ipsum has been the industry's standard dummy text
+                            ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.
+                        </p>
+
+                        <div class="flex items-center gap-4 mt-6">
+                            <img src="https://i.pravatar.cc/100?img=14" alt="Foto de Mariana"
+                                class="w-12 h-12 rounded-full object-cover">
+
+                            <div>
+                                <h2 class="font-bold">Mariana Silva</h2>
+                                <p class="text-xs mt-1">Função/Cargo</p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <button id="prev" aria-label="Depoimento anterior"
+                class="btn btn-circle btn-info absolute left-[-60px] top-1/2 -translate-y-1/2 text-white">
+                ❮
+            </button>
+
+            <div id="dots" class="flex justify-center gap-3 mt-10">
+                <button class="dot" aria-label="Ir para o grupo 1"></button>
+                <button class="dot" aria-label="Ir para o grupo 2"></button>
+                <button class="dot" aria-label="Ir para o grupo 3"></button>
+                <button class="dot" aria-label="Ir para o grupo 4"></button>
+            </div>
+
+        </div>
+    </section>
+    <style type="text/tailwindcss">
+        .testimonial-card {
+      @apply flex-none w-[330px] min-h-[200px] rounded-lg
+             p-4 text-white
+             bg-gradient-to-br from-blue-800 via-rose-700 to-purple-600;
+    }
+
+    .dot {
+      @apply w-2 h-2 rounded-full bg-gray-400 transition-colors;
+    }
+
+    .dot.active {
+      @apply bg-sky-500;
+    }
+  </style>
+
+    <script>
+        const viewport = document.querySelector("#slider-viewport");
+        const track = document.querySelector("#slider-track");
+        const prev = document.querySelector("#prev");
+        const dots = [...document.querySelectorAll(".dot")];
+
+        let position = 0;
+
+        function getStep() {
+            const card = track.querySelector(".testimonial-card");
+            const gap = parseFloat(getComputedStyle(track).gap) || 0;
+            return card.getBoundingClientRect().width + gap;
+        }
+
+        function getMaxPosition() {
+            return Math.max(
+                0,
+                Math.ceil((track.scrollWidth - viewport.clientWidth) / getStep())
+            );
+        }
+
+        function updateSlider() {
+            const max = getMaxPosition();
+
+            position = Math.max(0, Math.min(position, max));
+
+            track.style.transform =
+                `translateX(-${position * getStep()}px)`;
+
+            dots.forEach((dot, index) => {
+                dot.classList.toggle("active", index === position);
+            });
+
+            prev.disabled = position === 0;
+            prev.classList.toggle("opacity-40", position === 0);
+        }
+
+        prev.addEventListener("click", () => {
+            position--;
+            updateSlider();
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener("click", () => {
+                position = index;
+                updateSlider();
+            });
+        });
+
+        window.addEventListener("resize", updateSlider);
+
+        updateSlider();
+    </script>
+
 </body>
 
 </html>
