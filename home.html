@@ -1,16 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Olimpíadas da Advocacia 2023</title>
-
-    <!-- DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-
-    <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
@@ -542,32 +537,183 @@
         updateSlider();
     </script>
 
-    <section class="duvidas-frequentes">
-        <div class="flex flex-col justify-center items-center min-h-screen bg-base-200 p-4">
-            <div class="w-[755px] h-[294px] overflow-y-auto border border-base-300 rounded-box bg-base-100 p-2 flex flex-col gap-2">
-                <div class="collapse collapse-arrow bg-[base-200] border border-base-300">
-                    <input type="radio" name="my-accordion-2" checked="checked" />
-                    <div class="collapse-title font-semibold bg-[#333] text-white rounded-t-lg">How do I create an account?</div>
-                    <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow
-                        the registration process.</div>
-                </div>
-                <div class="collapse collapse-arrow bg-base-200 border border-base-300">
-                    <input type="radio" name="my-accordion-2" />
-                    <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
-                    <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the
-                        instructions sent to your email.</div>
-                </div>
-                <div class="collapse collapse-arrow bg-base-200 border border-base-300">
-                    <input type="radio" name="my-accordion-2" />
-                    <div class="collapse-title font-semibold">How do I update my profile information?</div>
-                    <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make
-                        changes.</div>
-                </div>
+    <section class="duvidas-frequentes bg-white py-16">
+        <div class="mx-auto flex max-w-4xl flex-col items-center px-4">
+            <h2 class="mb-2 text-center text-3xl font-bold text-red-600">Dúvidas Frequentes</h2>
+            <p class="mb-8 text-center text-sm text-gray-500">
+                Dúvidas frequentemente questionadas por usuários que acessam a página
+            </p>
 
+            <div class="w-full overflow-hidden rounded-lg border border-gray-300 bg-white">
+                <div class="collapse collapse-arrow rounded-none border-b border-gray-200 bg-white">
+                    <input type="radio" name="faq-accordion" class="peer" checked />
+                    <div class="collapse-title bg-white py-4 text-base font-semibold text-gray-700 after:text-sky-500
+                            peer-checked:bg-[#303030] peer-checked:text-white">
+                        O evento dá algum tipo de premiação para os vencedores?
+                    </div>
+                    <div class="collapse-content bg-white text-sm leading-relaxed text-gray-700">
+                        <p class="pt-4">
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow rounded-none border-b border-gray-200 bg-white">
+                    <input type="radio" name="faq-accordion" class="peer" />
+                    <div class="collapse-title bg-white py-4 text-base font-semibold text-gray-700 after:text-sky-500
+                            peer-checked:bg-[#303030] peer-checked:text-white">
+                        Where does it come from?
+                    </div>
+                    <div class="collapse-content bg-white text-sm leading-relaxed text-gray-700">
+                        <p class="pt-4">Resposta correspondente à dúvida acima...</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow rounded-none border-b border-gray-200 bg-white">
+                    <input type="radio" name="faq-accordion" class="peer" />
+                    <div class="collapse-title bg-white py-4 text-base font-semibold text-gray-700 after:text-sky-500
+                            peer-checked:bg-[#303030] peer-checked:text-white">
+                        Where can I get some?
+                    </div>
+                    <div class="collapse-content bg-white text-sm leading-relaxed text-gray-700">
+                        <p class="pt-4">Resposta correspondente à dúvida acima...</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow rounded-none border-b border-gray-200 bg-white">
+                    <input type="radio" name="faq-accordion" class="peer" />
+                    <div class="collapse-title bg-white py-4 text-base font-semibold text-gray-700 after:text-sky-500
+                            peer-checked:bg-[#303030] peer-checked:text-white">
+                        What is Lorem Ipsum?
+                    </div>
+                    <div class="collapse-content bg-white text-sm leading-relaxed text-gray-700">
+                        <p class="pt-4">Resposta correspondente à dúvida acima...</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow rounded-none bg-white">
+                    <input type="radio" name="faq-accordion" class="peer" />
+                    <div class="collapse-title bg-white py-4 text-base font-semibold text-gray-700 after:text-sky-500
+                            peer-checked:bg-[#303030] peer-checked:text-white">
+                        Why do we use it?
+                    </div>
+                    <div class="collapse-content bg-white text-sm leading-relaxed text-gray-700">
+                        <p class="pt-4">Resposta correspondente à dúvida acima...</p>
+                    </div>
+                </div>
             </div>
         </div>
-
     </section>
+    <section class="bg-black py-16">
+        <div class="mx-auto flex max-w-4xl flex-col items-center px-4 text-white">
+            <h2 class="mb-10 text-3xl font-semibold">Realização</h2>
+            <div class="flex flex-wrap items-center justify-center gap-6">
+                <div class="flex h-12 w-[166px] items-center justify-center rounded-lg bg-white px-2">
+                    <img src="assets/img/Group 53789.png" alt="OAB Concad Casag"
+                        class="max-h-8 w-auto object-contain" />
+                </div>
+                <div class="flex h-12 w-[166px] items-center justify-center rounded-lg bg-white px-2">
+                    <img src="assets/img/Group 53789.png" alt="OAB Concad Casag"
+                        class="max-h-8 w-auto object-contain" />
+                </div>
+                <div class="flex h-12 w-[166px] items-center justify-center rounded-lg bg-white px-2">
+                    <img src="assets/img/Group 53789.png" alt="OAB Concad Casag"
+                        class="max-h-8 w-auto object-contain" />
+                </div>
+            </div>
+
+            <h3 class="mb-10 mt-16 text-xl font-semibold">Organização</h3>
+            <div class="flex flex-wrap items-center justify-center gap-6">
+                <div class="flex h-12 w-[166px] items-center justify-center rounded-lg bg-white px-2">
+                    <img src="assets/img/Group 53790.png" alt="HC Sports" class="max-h-8 w-auto object-contain" />
+                </div>
+                <div class="flex h-12 w-[166px] items-center justify-center rounded-lg bg-white px-2">
+                    <img src="assets/img/Group 53790.png" alt="HC Sports" class="max-h-8 w-auto object-contain" />
+                </div>
+                <div class="flex h-12 w-[166px] items-center justify-center rounded-lg bg-white px-2">
+                    <img src="assets/img/Group 53790.png" alt="HC Sports" class="max-h-8 w-auto object-contain" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-12">
+        <div class="mx-auto max-w-5xl px-4">
+            <h2 class="mb-8 text-3xl font-bold text-red-600">Fale conosco</h2>
+
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+                <div class="flex flex-col gap-5">
+                    <label class="form-control w-full">
+                        <span class="mb-2 text-sm font-semibold text-gray-800">Nome</span>
+                        <input type="text" placeholder="Digite o seu nome"
+                            class="input input-bordered h-12 w-full rounded-lg border-gray-200 bg-white text-sm placeholder:text-gray-400 focus:border-sky-500 focus:outline-none" />
+                    </label>
+
+                    <label class="form-control w-full">
+                        <span class="mb-2 text-sm font-semibold text-gray-800">E-mail</span>
+                        <input type="email" placeholder="Digite o seu e-mail"
+                            class="input input-bordered h-12 w-full rounded-lg border-gray-200 bg-white text-sm placeholder:text-gray-400 focus:border-sky-500 focus:outline-none" />
+                    </label>
+
+                    <label class="form-control w-full">
+                        <span class="mb-2 text-sm font-semibold text-gray-800">Ocupação</span>
+                        <input type="text" placeholder="Digite a sua ocupação"
+                            class="input input-bordered h-12 w-full rounded-lg border-gray-200 bg-white text-sm placeholder:text-gray-400 focus:border-sky-500 focus:outline-none" />
+                    </label>
+                </div>
+                <label class="form-control flex h-full w-full flex-col">
+                    <span class="mb-2 text-sm font-semibold text-gray-800">Mensagem</span>
+                    <textarea placeholder="Digite a mensagem"
+                        class="textarea textarea-bordered min-h-[250px] w-full flex-1 resize-none rounded-lg border-gray-200 bg-white text-sm placeholder:text-gray-400 focus:border-sky-500 focus:outline-none"></textarea>
+                </label>
+            </div>
+
+            <div class="mt-6 flex justify-end">
+                <button type="submit"
+                    class="btn btn-sm h-10 min-h-0 rounded-md border-none bg-[#0095d9] px-6 text-sm font-semibold normal-case text-white hover:bg-sky-600">
+                    Enviar e-mail
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-[#f2f2f2] pb-10 pt-6">
+        <div class="mx-auto max-w-6xl px-4">
+            <div class="border-t border-gray-300 pt-8">
+                <div class="flex flex-col items-center justify-between gap-6 md:flex-row">
+                    <a href="#">
+                        <img src="assets/img/Olimpiadas Concad Logo Horizontal (1) 2.svg"
+                            alt="Olimpíadas da Advocacia CONCAD 2023" />
+                    </a>
+                    <nav>
+                        <ul
+                            class="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-sm font-semibold text-gray-600">
+                            <li>
+                                <a href="#" class="hover:text-sky-500">Home</a>
+                            </li>
+                            <li>
+                                <a href="modalidade-lista.html" class="hover:text-sky-500">Modalidades</a>
+                            </li>
+                            <li>
+                                <a href="agenda.html" class="hover:text-sky-500">Agenda</a>
+                            </li>
+                            <li>
+                                <a href="noticias-lista.html" class="hover:text-sky-500">Resultados</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-sky-500">Canais</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:text-sky-500">Regulamento</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#">
+                        <img src="assets/img/ant-design_instagram-filled.png" alt="">
+                    </a>
+                </div>
+
+                <p class="mt-10 text-center text-xs text-gray-600">
+                    2023 HC Sports. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
