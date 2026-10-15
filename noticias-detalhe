@@ -23,7 +23,7 @@
                 <ul class=" flex gap-8 px-1 text-xs">
                     <li><a href="home.html" class="hover:text-[#0095D9]">Home</a></li>
                     <li><a href="modalidade-lista.html" class="hover:text-[#0095D9]">Modalidades</a></li>
-                    <li><a href="noticias-lista.html" class="text-[#0095D9]">Notícias</a></li>
+                    <li><a href="noticias-lista.html" class="hover:text-[#0095D9]">Notícias</a></li>
                     <li><a href="agenda.html" class="hover:text-[#0095D9]">Cronograma</a></li>
                     <li><a href="" class="hover:text-[#0095D9]">Administradores</a></li>
                     <li><a href="" class="hover:text-[#0095D9]">Regulamento</a></li>
@@ -87,11 +87,11 @@
         </div>
 
     </main>
-    <footer class="bg-[#F2F2F2] border-t border-[#E0E0E0] py-6 mt-12">
-        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center text-xs text-[#828282]">
-            <p>I Olimpíadas da Advocacia 2023</p>
-            <p>2023 HC Sports. Todos os direitos reservados.</p>
-        </div>
+    <footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4 px-22">
+        <aside class="flex justify-between items-center w-full">
+            <p class="text-xs">I Olimpíadas da Advocacia 2023</p>
+            <p class="text-xs">2023 HC Sports. Todos os direitos reservados.</p>
+        </aside>
     </footer>
 </body>
 </html>
