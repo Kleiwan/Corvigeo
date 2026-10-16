@@ -12,26 +12,25 @@
   </script>
 </head>
 
-<body class="bg-base-200 font-sans ">
-  <header>
-        <div class="navbar bg-base-100 shadow-sm px-22">
-            <div class="flex-1">
-                <a class="btn btn-ghost text-xl" href="home.html">
-                    <img src="assets/img/Olimpiadas Concad Logo Horizontal (1) 2.png" alt="">
-                </a>
-            </div>
-            <div class="flex-none">
-                <ul class="flex gap-8 px-1 text-xs">
-                    <li><a href="home.html" class="hover:text-[#0095D9]">Home</a></li>
-                    <li><a href="modalidade-lista.html" class="hover:text-[#0095D9]">Modalidades</a></li>
-                    <li><a href="noticias-lista.html" class="hover:text-[#0095D9]">Notícias</a></li>
-                    <li><a href="agenda.html" class="text-[#0095D9]">Cronograma</a></li>
-                    <li><a href="" class="hover:text-[#0095D9]">Administradores</a></li>
-                    <li><a href="" class="hover:text-[#0095D9]">Regulamento</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+<body class="font-sans ">
+  <header class="bg-white shadow-sm border-b border-gray-100">
+    <div class="w-full px-40 mx-auto  h-20 flex items-center justify-between">
+        <a href="home.html" class="flex items-center">
+            <img src="assets/img/Olimpiadas Concad Logo Horizontal (1) 2.png" alt="Olimpíadas da Advocacia" class="h-10 w-auto">
+        </a>
+        <nav>
+            <ul class="flex items-center gap-7 text-sm font-semibold text-gray-700">
+                <li><a href="home.html" class="hover:text-[#0095D9] transition-colors">Home</a></li>
+                <li><a href="modalidades-lista.html" class="hover:text-[#0095D9] transition-colors">Modalidades</a></li>
+                <li><a href="noticias-lista.html" class="hover:text-[#0095D9] transition-colors">Notícias</a></li>
+                <li><a href="agendaV2.html" class="text-[#0095D9] font-bold">Cronograma</a></li>
+                <li><a href="#" class="hover:text-[#0095D9] transition-colors">Resultados</a></li>
+                <li><a href="#" class="hover:text-[#0095D9] transition-colors">Administradores</a></li>
+                <li><a href="#" class="hover:text-[#0095D9] transition-colors">Regulamento</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
   <main class="max-w-5xl mx-auto min-h-screen bg-base-100 px-6 py-8 flex flex-col gap-14">
 
     <!-- CRONOGRAMA GERAL -->
@@ -1441,11 +1440,11 @@
     </section>
 
   </main>
-  <footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4 px-22">
-        <aside class="flex justify-between items-center w-full">
-            <p class="text-xs">I Olimpíadas da Advocacia 2023</p>
-            <p class="text-xs">2023 HC Sports. Todos os direitos reservados.</p>
-        </aside>
-    </footer>
+  <footer class="bg-[#f2f2f2] py-10 text-sm text-gray-700 font-medium">
+    <div class="w-full mx-auto px-16 flex flex-col md:flex-row items-center justify-between">
+        <div class="px-20">I Olimpíadas da Advocacia 2023</div>
+        <div class="text-gray-500 mr-20">2023 HC Sports. Todos os direitos reservados.</div>
+    </div>
+</footer>
 </body>
 </html>

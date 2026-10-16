@@ -85,22 +85,24 @@
   </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="index.html" aria-label="Olimpíadas da Advocacia — início">
-        <img src="assets/img/Olimpiadas Concad Logo Horizontal (1) 2.svg" alt="Olimpíadas da Advocacia — CONCAD 2023">
-      </a>
-      <nav class="main-nav" aria-label="Navegação principal">
-        <a href="home.html">Home</a>
-        <a class="active" href="modalidades.html" aria-current="page">Modalidades</a>
-        <a href="noticias.html">Notícias</a>
-        <a href="agendaV2.html">Cronograma</a>
-        <a href="#">Administradores</a>
-        <a href="#">Regulamento</a>
-      </nav>
+ <header class="bg-white shadow-sm border-b border-gray-100">
+    <div class="w-full px-76 mx-auto  h-20 flex items-center justify-between">
+        <a href="home.html" class="flex items-center">
+            <img src="assets/img/Olimpiadas Concad Logo Horizontal (1) 2.png" alt="Olimpíadas da Advocacia">
+        </a>
+        <nav>
+            <ul class="flex items-center gap-7 text-sm font-semibold text-gray-700">
+                <li><a href="home.html" class="hover:text-[#0095D9] transition-colors">Home</a></li>
+                <li><a href="modalidades-lista.html" class="text-[#0095D9] font-bold">Modalidades</a></li>
+                <li><a href="noticias-lista.html" class="hover:text-[#0095D9] transition-colors">Notícias</a></li>
+                <li><a href="agendaV2.html" class="hover:text-[#0095D9] transition-colors">Cronograma</a></li>
+                <li><a href="#" class="hover:text-[#0095D9] transition-colors">Resultados</a></li>
+                <li><a href="#" class="hover:text-[#0095D9] transition-colors">Administradores</a></li>
+                <li><a href="#" class="hover:text-[#0095D9] transition-colors">Regulamento</a></li>
+            </ul>
+        </nav>
     </div>
-  </header>
-
+</header>
   <main>
     <h1>MODALIDADES</h1>
     <div class="search-row">
@@ -178,12 +180,12 @@
     <p class="no-results" id="noResults">Nenhuma modalidade encontrada.</p>
   </main>
 
-  <footer>
-    <div class="footer-inner">
-      <strong>I Olimpíadas da Advocacia 2023</strong>
-      <span>2023 HC Sports. Todos os direitos reservados.</span>
+  <footer class="bg-[#f2f2f2] py-6 text-sm text-gray-700 font-medium">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+        <div>I Olimpíadas da Advocacia 2023</div>
+        <div class="text-gray-500 px-22">2023 HC Sports. Todos os direitos reservados.</div>
     </div>
-  </footer>
+</footer>
 
   <script>
     const searchInput = document.getElementById('sportSearch');

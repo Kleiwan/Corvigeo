@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,24 +16,24 @@
 </head>
 
 <body class="bg-base-100 text-[#333]">
-    <header>
-        <div class="navbar bg-base-100 shadow-sm px-22">
-            <div class="flex-1">
-                <a class="btn btn-ghost text-xl" href="home.html"><img
-                        src="assets/img/Olimpiadas Concad Logo Horizontal (1) 2.png" alt="Olimpíadas da Advocacia"></a>
-            </div>
-            <div class="flex-none">
-                <ul class="flex gap-8 px-1 text-xs">
-                    <li><a href="home.html" class="hover:text-[#0095D9]">Home</a></li>
-                    <li><a href="modalidade-lista.html" class="hover:text-[#0095D9]">Modalidades</a></li>
-                    <li><a href="noticias-lista.html" class="text-[#0095D9] font-semibold">Notícias</a></li>
-                    <li><a href="agenda.html" class="hover:text-[#0095D9]">Cronograma</a></li>
-                    <li><a href="" class="hover:text-[#0095D9]">Administradores</a></li>
-                    <li><a href="" class="hover:text-[#0095D9]">Regulamento</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+    <header class="bg-white shadow-sm border-b border-gray-100">
+    <div class="w-full px-18 mx-auto  h-20 flex items-center justify-between">
+        <a href="home.html" class="flex items-center">
+            <img src="assets/img/Olimpiadas Concad Logo Horizontal (1) 2.png" alt="Olimpíadas da Advocacia" class="h-10 w-auto">
+        </a>
+        <nav>
+            <ul class="flex items-center gap-7 text-sm font-semibold text-gray-700">
+                <li><a href="home.html" class="hover:text-[#0095D9] transition-colors">Home</a></li>
+                <li><a href="modalidades-lista.html" class="hover:text-[#0095D9] transition-colors">Modalidades</a></li>
+                <li><a href="noticias-lista.html" class="text-[#0095D9] font-bold">Notícias</a></li>
+                <li><a href="agendaV2.html" class="hover:text-[#0095D9] transition-colors">Cronograma</a></li>
+                <li><a href="#" class="hover:text-[#0095D9] transition-colors">Resultados</a></li>
+                <li><a href="#" class="hover:text-[#0095D9] transition-colors">Administradores</a></li>
+                <li><a href="#" class="hover:text-[#0095D9] transition-colors">Regulamento</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
     <!-- conteudo-->
     <main class="px-22 py-12">
@@ -188,18 +187,18 @@
                 <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
             </button>
             <span class="text-sm">Página 1 de 2</span>
-            <a href="#" class="btn btn-square btn-sm bg-[#0095D9] text-white border-0 hover:bg-[#007fb8]" aria-label="Próxima página">
+            <a href="noticias-detalhe.html" class="btn btn-square btn-sm bg-[#0095D9] text-white border-0 hover:bg-[#007fb8]" aria-label="Próxima página">
                 <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
             </a>
         </nav>
     </main>
 
-    <footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4 px-22">
-        <aside class="flex justify-between items-center w-full">
-            <p class="text-xs">I Olimpíadas da Advocacia 2023</p>
-            <p class="text-xs">2023 HC Sports. Todos os direitos reservados.</p>
-        </aside>
-    </footer>
+    <footer class="bg-[#f2f2f2] py-10 text-sm text-gray-700 font-medium">
+    <div class="w-full mx-auto px-20 flex flex-col md:flex-row items-center justify-between gap-14">
+        <div>I Olimpíadas da Advocacia 2023</div>
+        <div class="text-gray-500">2023 HC Sports. Todos os direitos reservados.</div>
+    </div>
+</footer>
 
 </body>
 
