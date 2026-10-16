@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Notícias post</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header>
+<body class="bg-white min-h-screen flex flex-col justify-between">
+   <header>
         <div class="navbar bg-base-100 shadow-sm px-22">
             <div class="flex-1">
                 <a class="btn btn-ghost text-xl" href="home.html"><img
@@ -29,16 +31,67 @@
             </div>
         </div>
     </header>
+    <main class="max-w-6xl mx-auto px-6 py-8 flex-grow w-full">
+        <nav class="text-xs text-[#828282] mb-6 flex items-center gap-1">
+            <a href="noticias-lista.html" class="hover:underline">Notícias</a>
+            <img src="assets/img/seta.svg" alt="seta">
+            <span class="text-[#FF161F] font-semibold">Notícia Completa</span>
+        </nav>
+        <h1 class="text-2xl md:text-3xl font-bold mb-3">
+            Colégio de presidentes das CAA/Concad anuncia inscrições para Olimpíadas da Advocacia
+        </h1>
 
-    <!-- conteudo-->
+        <div class="flex items-center gap-2 text-xs text-[#4F4F4F] mb-6">
+            <span>Escrita por HC Sports</span>
+            <img src="assets/img/Ellipse 4.svg" alt="" class="w-1.5 h-1.5">
+            <span>17/03/2023</span>
+        </div>
 
+        <div class="h-px bg-[#E0E0E0] w-full mb-8"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-6">
+            <div class="lg:col-span-7 space-y-4 text-sm md:text-base">
+                <p>
+                    As datas de inscrições para a primeira edição das Olimpíadas da Advocacia foram anunciadas nesta terça-feira (14/3) durante o 5º Colégio de presidentes das Caixas de Assistência aos Advogados (CAA) e da Coordenação Nacional das Caixas de Assistência dos Advogados (Concad). Os interessados em participar podem fazer a sua inscrição entre 03 de abril e 05 de junho, neste site.
+                </p>
+                <p>
+                    “Será uma grande alegria reunir toda a advocacia em torno do esporte em Goiânia. Essa sinergia entre Caixas de Assistência e OAB Nacional tem sido importantíssima para que possamos entregar o melhor para a advocacia brasileira”, disse o vice-presidente da OAB Nacional, Rafael Horn. “É com muito carinho que estamos trazendo novamente a pauta do esporte às Caixas de Assistência dos Advogados e a toda advocacia”, afirmou o coordenador nacional da Concad, Eduardo Uchôa Athayde.
+                </p>
+            </div>
+
+            <div class="lg:col-span-5">
+                <img src="assets/img/ciclistas.png" alt="Ciclistas" class="w-full h-auto rounded-xl">
+            </div>
+        </div>
+
+        <div class="space-y-4 text-sm md:text-base text-[#4F4F4F]">
+            <p>
+                O presidente da seccional de Goiás, responsável por sediar os jogos, Rafael Lara, disse que a cidade está pronta para receber os atletas. “As Olimpíadas da Advocacia marcarão a história do Sistema OAB. Faz tempo que a gente não se reúne festivamente para jogos, e essa será uma excelente oportunidade”, disse Lara.
+            </p>
+
+            <h2 class="text-xl md:text-2xl font-bold pt-2">
+                Sobre as Olimpíadas da Advocacia
+            </h2>
+
+            <p>
+                Com o apoio do CFOAB e organização da Concad, os jogos prometem reunir os profissionais da advocacia em um momento de descontração e alegria, com diversas modalidades esportivas. O evento será realizado entre 3 e 8 de julho, em Goiânia.
+            </p>
+
+            <p>
+                Serão 19 modalidades disponíveis, sendo 11 modalidades fixas e 7 por adesão. As categorias fixas incluem futebol society, futebol 11, vôlei de praia, vôlei de quadra, beach tennis, futevôlei, judô, jiu-jitsu, tênis, natação e cross. Já as modalidades por adesão, aquelas que dependem de um número mínimo de participantes, incluem tênis de mesa, basquete 3×3, xadrez, futmesa, corrida 10Km e 5Km, tiro esportivo, sinuca e modalidades para pessoas com deficiência (PCD).
+            </p>
+
+            <p>
+                Poderão se inscrever advogados que estejam com a inscrição regular e adimplentes. Cada participante poderá se inscrever em até duas modalidades. Estagiários também poderão disputar as Olimpíadas, mas apenas nos esportes na modalidade coletiva, no caso, futebol e vôlei, sendo admitidos somente dois estagiários por equipe.
+            </p>
+        </div>
+
+    </main>
     <footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4 px-22">
         <aside class="flex justify-between items-center w-full">
             <p class="text-xs">I Olimpíadas da Advocacia 2023</p>
             <p class="text-xs">2023 HC Sports. Todos os direitos reservados.</p>
         </aside>
     </footer>
-
 </body>
-
 </html>
